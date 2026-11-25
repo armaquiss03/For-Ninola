@@ -4,6 +4,7 @@ interface ResilientImageProps {
   src: string;
   alt: string;
   fallbackTitle?: string;
+  placeholderLabel?: string;
   className?: string;
   imgClassName?: string;
 }
@@ -12,25 +13,29 @@ export function ResilientImage({
   src,
   alt,
   fallbackTitle,
+  placeholderLabel = 'Espaço reservado para fotografia',
   className = '',
   imgClassName = '',
 }: ResilientImageProps) {
   const [hasError, setHasError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  if (hasError || !src) {
+  if (hasError || !src.trim()) {
     return (
       <div
-        className={`relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#f4d9e2]/65 via-[#e2d8ee]/65 to-[#d6e3f2]/70 p-6 text-center ${className}`}
+        className={`relative flex items-center justify-center overflow-hidden border border-[#2b1d19]/12 bg-gradient-to-br from-[#f5dde4]/80 via-[#e8def2]/75 to-[#dce7f4]/80 p-8 text-center ${className}`}
         role="img"
         aria-label={alt}
       >
-        <div className="max-w-[22ch] space-y-2">
-          <div className="mx-auto h-px w-8 bg-[#2e201d]/25" />
-          <p className="font-serif-editorial text-lg italic text-[#2e201d]/80">
+        <div className="max-w-[26ch] space-y-3">
+          <div className="mx-auto h-px w-8 bg-[#2b1d19]/25" />
+          <p className="font-serif-editorial text-xl italic leading-snug text-[#2b1d19]/85">
             {fallbackTitle || alt}
           </p>
-          <div className="mx-auto h-px w-8 bg-[#2e201d]/25" />
+          <p className="text-[11px] tracking-[0.1em] text-[#5e4741]/80">
+            {placeholderLabel}
+          </p>
+          <div className="mx-auto h-px w-8 bg-[#2b1d19]/25" />
         </div>
       </div>
     );

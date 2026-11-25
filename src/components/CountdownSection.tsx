@@ -61,18 +61,18 @@ export function CountdownSection({
     if (Number.isNaN(date.getTime())) {
       return '';
     }
-    return new Intl.DateTimeFormat('en-US', {
-      month: 'long',
+    return new Intl.DateTimeFormat('pt-PT', {
       day: 'numeric',
+      month: 'long',
       year: 'numeric',
     }).format(date);
   }, [targetDateIso]);
 
   const units = [
-    { label: remaining.days === 1 ? 'day' : 'days', value: String(remaining.days) },
-    { label: remaining.hours === 1 ? 'hour' : 'hours', value: padTwo(remaining.hours) },
-    { label: remaining.minutes === 1 ? 'minute' : 'minutes', value: padTwo(remaining.minutes) },
-    { label: remaining.seconds === 1 ? 'second' : 'seconds', value: padTwo(remaining.seconds) },
+    { label: remaining.days === 1 ? 'dia' : 'dias', value: String(remaining.days) },
+    { label: remaining.hours === 1 ? 'hora' : 'horas', value: padTwo(remaining.hours) },
+    { label: remaining.minutes === 1 ? 'minuto' : 'minutos', value: padTwo(remaining.minutes) },
+    { label: remaining.seconds === 1 ? 'segundo' : 'segundos', value: padTwo(remaining.seconds) },
   ];
 
   return (
@@ -87,7 +87,7 @@ export function CountdownSection({
             id="countdown-heading"
             className="font-serif-editorial text-2xl font-normal italic text-[#5e4741] md:text-3xl"
           >
-            {remaining.isArrived ? `Today is yours, ${recipientName}` : title}
+            {remaining.isArrived ? `Hoje o dia é teu, ${recipientName}` : title}
           </h2>
           {formattedDate && (
             <p className="text-xs tracking-[0.12em] text-[#5e4741]">

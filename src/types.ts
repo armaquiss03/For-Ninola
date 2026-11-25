@@ -1,32 +1,51 @@
-export type MemoryCategory = 'Mornings' | 'Evenings' | 'Quiet Places';
-
-export interface MemoryItem {
+export interface PhotoSlot {
   id: string;
-  figureNumber: string;
+  numberLabel: string;
   title: string;
-  category: MemoryCategory;
+  caption: string;
+  imageUrl: string;
+}
+
+export interface FeaturedPhoto {
+  title: string;
   dateLabel: string;
   location: string;
   caption: string;
   reflection: string;
   imageUrl: string;
-  aspect: 'landscape' | 'portrait' | 'square';
-  featured?: boolean;
 }
 
-export interface KeepsakeConfig {
+export interface DailyRevealItem {
+  id: string;
+  unlockDate: string; // YYYY-MM-DD na hora local
+  dateLabel: string;
+  bookTitle: string;
+  bookAuthor: string;
+  title: string;
+  note: string;
+}
+
+export interface KeepsakeData {
   recipientName: string;
   senderName: string;
-  targetDateIso: string; // e.g., "2026-12-14T00:00"
-  heroKicker: string;
+  birthdayIso: string;
+  birthdayDateKey: string; // YYYY-MM-DD
+  previewBirthdayMode: boolean;
   heroHeadline: string;
   heroLead: string;
   heroImageUrl: string;
   heroImageCaption: string;
   countdownTitle: string;
-  countdownSubtitle: string;
+  songTitle: string;
+  songArtist: string;
+  songYoutubeId: string;
+  songPath: string;
+  voiceNoteLabel: string;
+  voiceNotePath: string;
   letterSalutation: string;
-  letterBody: string; // paragraphs separated by double newlines
+  letterBody: string;
   letterClosing: string;
-  memories: MemoryItem[];
+  dailyReveals: DailyRevealItem[];
+  featuredPhoto: FeaturedPhoto;
+  slideshowPhotos: PhotoSlot[];
 }
