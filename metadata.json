@@ -1,0 +1,6 @@
+{
+  "name": "Between Us — Birthday Keepsake",
+  "description": "A quiet, editorial birthday keepsake featuring a live countdown, curated memory gallery, and digital letter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

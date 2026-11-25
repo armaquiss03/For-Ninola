@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --canvas: #f7f1ed;
+    --paper: #fbf7f4;
+    --espresso: #2b1d19;
+    --cocoa: #5e4741;
+    --taupe: #8d7670;
+    --hairline: rgba(43, 29, 25, 0.12);
+  }
+
+  html {
+    background-color: var(--canvas);
+    color: var(--espresso);
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--canvas);
+    color: var(--espresso);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #e4d6ec;
+    color: #2b1d19;
+  }
+}
+
+.font-serif-editorial {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.font-sans-body {
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.tabular-lining {
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+/* Smooth horizontal dawn-to-dusk pastel wash: blush pink -> soft lavender -> mist blue -> warm linen */
+.editorial-pastel-sky {
+  background: linear-gradient(
+    145deg,
+    #f6dde4 0%,
+    #eadff2 34%,
+    #dce7f4 66%,
+    #f7f1ed 100%
+  );
+}
+
+/* Subtle horizontal gradient band for the typographic timepiece */
+.editorial-pastel-ribbon {
+  background: linear-gradient(
+    90deg,
+    #f4e5e4 0%,
+    #ede1ee 35%,
+    #e0e7f2 70%,
+    #efe4dc 100%
+  );
+}
+
+/* Gentle atmospheric paper wash behind the letter */
+.editorial-letter-wash {
+  background: linear-gradient(
+    180deg,
+    #f7f1ed 0%,
+    #f4e2e8 28%,
+    #e9e1f2 62%,
+    #e2eaf4 88%,
+    #efe5de 100%
+  );
+}
+
+.editorial-drop-cap::first-letter {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 3.75rem;
+  line-height: 0.82;
+  font-weight: 400;
+  float: left;
+  margin-right: 0.7rem;
+  margin-top: 0.2rem;
+  color: #2b1d19;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
