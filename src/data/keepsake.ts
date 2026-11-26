@@ -49,7 +49,7 @@ export const KEEPSAKE: KeepsakeData = {
   letterSalutation: 'Querida Ninola,',
   letterBody: `Passei bastante tempo a pensar em como juntar tudo isto sem exageros, porque o que nasceu entre nós sempre viveu na leveza e na verdade.
 
-Nunca nos encontrámos pessoalmente, não temos memórias, e também ainda não demos um rótulo para tudo o que vivemos, mas mesmo assim, é curioso como conseguiste ocupar um lugar tão especial nos meus dias, mesmo sem querer espero pelas tuas mensagens, no cuidado com que reparo no que dizes e na calma que sinto sempre que estamos a falar. Em "Cruzando o Caminho do Sol", lê-se que o mundo podia tentar roubar muita coisa às pessoas, "mas não podia privá-las de sua memória" — e cada conversa nossa já faz parte do que eu guardo comigo com mais cuidado.
+Nunca nos encontrámos pessoalmente, não temos memórias, e também não demos um rótulo para tudo o que vivemos, mas mesmo assim, é curioso como conseguiste ocupar um lugar tão especial nos meus dias, mesmo sem querer espero pelas tuas mensagens, no cuidado com que reparo no que dizes e na calma que sinto sempre que estamos a falar. Em "Cruzando o Caminho do Sol", lê-se que o mundo podia tentar roubar muita coisa às pessoas, "mas não podia privá-las de sua memória" — e cada conversa nossa já faz parte do que eu guardo comigo com mais cuidado.
 
 Dizem por aí que o tempo é o melhor juiz de tudo, e eu não sei se é verdade, mas sei que o tempo que passei a conhecer-te foi suficiente para perceber que és uma pessoa rara, com uma autenticidade que me faz sentir à vontade para ser eu mesmo.
 
