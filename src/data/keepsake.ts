@@ -7,7 +7,7 @@ import { KeepsakeData } from '../types';
 // ============================================================================
 
 // COLA AQUI O CAMINHO DA TUA NOTA DE VOZ A LER A CARTA (ex: '/audio/nota-de-voz.mp3'):
-const VOICE_NOTE_PATH = './src/public/audio/ForNinola.mp3';
+const VOICE_NOTE_PATH = '/audio/ForNinola.mp3';
 
 // OPCIONAL: Se preferires um MP3 local em vez do YouTube para a música, cola aqui:
 const LOCAL_SONG_PATH = '';
@@ -32,7 +32,7 @@ export const KEEPSAKE: KeepsakeData = {
     'Não nos vimos pessoalmente e não temos fotografias juntos, mas entre mensagens e chamadas sem hora para acabar, tornaste-te a minha pessoa favorita para esperar. A cada dia até ao teu aniversário abre-se aqui uma nota especial para ti; No dia 4 abrirá uma carta aqui, então terás que vir aqui todos os dias até o teu aniversário.',
 
   // COLA AQUI O CAMINHO DA FOTO PRINCIPAL DE ABERTURA DA NINOLA (ex: '/fotos/ninola-capa.jpg'):
-  heroImageUrl: './src/public/fotos/10.jpg',
+  heroImageUrl: '/fotos/10.jpg',
   heroImageCaption: 'Ninola 1',
 
   countdownTitle: 'Até chegar o teu dia, Ninola',
@@ -143,7 +143,7 @@ Que Deus te abençoe e te guarde sempre, Ninola. Que a tua vida seja repleta de 
       'Nunca estivemos no mesmo sítio ao mesmo tempo, mas isso nunca foi um problema para nós.',
     reflection:
       'A distância física só tem mostrado o quanto é natural gostar de ti e estar ao teu lado.',
-    imageUrl: './src/public/fotos/1.jpg', // COLA AQUI O CAMINHO DA FOTO PRINCIPAL "COMPANHIA SEM DISTÂNCIA"
+    imageUrl: '/fotos/1.jpg', // COLA AQUI O CAMINHO DA FOTO PRINCIPAL "COMPANHIA SEM DISTÂNCIA"
   },
 
   // CARD COM 9 FOTOS DA NINOLA (passam automaticamente com transição suave)
@@ -154,63 +154,63 @@ Que Deus te abençoe e te guarde sempre, Ninola. Que a tua vida seja repleta de 
       numberLabel: '01 / 09',
       title: 'Ninola · 01',
       caption: 'Minha foto favorita.',
-      imageUrl: './src/public/fotos/2.jpg', // COLA AQUI O CAMINHO DA FOTO 1 DE 9 (ex: '/fotos/ninola-1.jpg')
+      imageUrl: '/fotos/2.jpg', // COLA AQUI O CAMINHO DA FOTO 1 DE 9 (ex: '/fotos/ninola-1.jpg')
     },
     {
       id: 'slide-2',
       numberLabel: '02 / 09',
       title: 'Ninola · 02',
       caption: 'A leveza com que iluminas um dia comum.',
-      imageUrl: './src/public/fotos/3.jpg', // COLA AQUI O CAMINHO DA FOTO 2 DE 9 (ex: '/fotos/ninola-2.jpg')
+      imageUrl: '/fotos/3.jpg', // COLA AQUI O CAMINHO DA FOTO 2 DE 9 (ex: '/fotos/ninola-2.jpg')
     },
     {
       id: 'slide-3',
       numberLabel: '03 / 09',
       title: 'Ninola · 03',
       caption: 'Entre conversas longas e sorrisos tranquilos.',
-      imageUrl: './src/public/fotos/3.jpg', // COLA AQUI O CAMINHO DA FOTO 3 DE 9 (ex: '/fotos/ninola-3.jpg')
+      imageUrl: '/fotos/3.jpg', // COLA AQUI O CAMINHO DA FOTO 3 DE 9 (ex: '/fotos/ninola-3.jpg')
     },
     {
       id: 'slide-4',
       numberLabel: '04 / 09',
       title: 'Ninola · 04',
       caption: 'Presença que atravessa qualquer quilómetro.',
-      imageUrl: './src/public/fotos/4.jpg', // COLA AQUI O CAMINHO DA FOTO 4 DE 9 (ex: '/fotos/ninola-4.jpg')
+      imageUrl: '/fotos/4.jpg', // COLA AQUI O CAMINHO DA FOTO 4 DE 9 (ex: '/fotos/ninola-4.jpg')
     },
     {
       id: 'slide-5',
       numberLabel: '05 / 09',
       title: 'Ninola · 05',
       caption: 'Te amo, mas bue bue não',
-      imageUrl: './src/public/fotos/5.jpg', // COLA AQUI O CAMINHO DA FOTO 5 DE 9 (ex: '/fotos/ninola-5.jpg')
+      imageUrl: '/fotos/5.jpg', // COLA AQUI O CAMINHO DA FOTO 5 DE 9 (ex: '/fotos/ninola-5.jpg')
     },
     {
       id: 'slide-6',
       numberLabel: '06 / 09',
       title: 'Ninola · 06',
       caption: 'O encanto silencioso de quem tu és.',
-      imageUrl: './src/public/fotos/6.jpg', // COLA AQUI O CAMINHO DA FOTO 6 DE 9 (ex: '/fotos/ninola-6.jpg')
+      imageUrl: '/fotos/6.jpg', // COLA AQUI O CAMINHO DA FOTO 6 DE 9 (ex: '/fotos/ninola-6.jpg')
     },
     {
       id: 'slide-7',
       numberLabel: '07 / 09',
       title: 'Ninola · 07',
       caption: 'Para olhar sem pressa enquanto o dia passa. Uma das minhas favoritas.',
-      imageUrl: './src/public/fotos/7.jpg', // COLA AQUI O CAMINHO DA FOTO 7 DE 9 (ex: '/fotos/ninola-7.jpg')
+      imageUrl: '/fotos/7.jpg', // COLA AQUI O CAMINHO DA FOTO 7 DE 9 (ex: '/fotos/ninola-7.jpg')
     },
     {
       id: 'slide-8',
       numberLabel: '08 / 09',
       title: 'Ninola · 08',
       caption: 'Cada pequena pausa traz o teu nome ao pensamento.',
-      imageUrl: './src/public/fotos/8.jpg', // COLA AQUI O CAMINHO DA FOTO 8 DE 9 (ex: '/fotos/ninola-8.jpg')
+      imageUrl: '/fotos/8.jpg', // COLA AQUI O CAMINHO DA FOTO 8 DE 9 (ex: '/fotos/ninola-8.jpg')
     },
     {
       id: 'slide-9',
       numberLabel: '09 / 09',
       title: 'Ninola · 09',
       caption: 'À espera do dia em que estas fotos ganhem a nossa história ao vivo.',
-      imageUrl: './src/public/fotos/9.jpg', // COLA AQUI O CAMINHO DA FOTO 9 DE 9 (ex: '/fotos/ninola-9.jpg')
+      imageUrl: '/fotos/9.jpg', // COLA AQUI O CAMINHO DA FOTO 9 DE 9 (ex: '/fotos/ninola-9.jpg')
     },
   ],
 };
