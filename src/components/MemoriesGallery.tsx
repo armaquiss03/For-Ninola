@@ -68,7 +68,7 @@ export function MemoriesGallery({
           </div>
           <div className="md:col-span-5">
             <p className="text-[15px] leading-relaxed text-[#5e4741]">
-              Ainda não temos fotografias juntos — mas guardo aqui a nossa imagem principal e alguns retratos teus que acompanham os meus dias.
+              Não temos fotografias juntos mas guardo aqui uma fotografia tua que fiz enquanto dormias e outras mais que acompanham os meus dias.
             </p>
           </div>
         </div>

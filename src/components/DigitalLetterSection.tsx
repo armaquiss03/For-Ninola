@@ -101,10 +101,10 @@ export function DigitalLetterSection({
               id="letter-heading"
               className="mt-4 font-serif-editorial text-4xl font-normal italic text-[#2b1d19] md:text-5xl"
             >
-              Guardada para o teu dia, {recipientName}
+              Carta para o teu dia, {recipientName}
             </h2>
             <p className="mx-auto mt-5 max-w-md font-serif-editorial text-xl leading-relaxed text-[#5e4741]">
-              Esta carta — e a minha voz a lê-la para ti — vai abrir-se aqui no dia quatro de dezembro.
+              Esta carta e a minha voz a lê-la para ti estarão disponíveis no dia 4 de Dezembro. Até lá, podes continuar a abrir as notas diárias e a ver as fotografias que guardei para ti.
             </p>
           </div>
         ) : (

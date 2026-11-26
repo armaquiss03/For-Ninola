@@ -7,7 +7,7 @@ import { KeepsakeData } from '../types';
 // ============================================================================
 
 // COLA AQUI O CAMINHO DA TUA NOTA DE VOZ A LER A CARTA (ex: '/audio/nota-de-voz.mp3'):
-const VOICE_NOTE_PATH = '';
+const VOICE_NOTE_PATH = './src/public/audio/ForNinola.mp3';
 
 // OPCIONAL: Se preferires um MP3 local em vez do YouTube para a música, cola aqui:
 const LOCAL_SONG_PATH = '';
@@ -27,18 +27,18 @@ export const KEEPSAKE: KeepsakeData = {
   previewBirthdayMode: PREVIEW_BIRTHDAY_MODE,
 
   // TEXTO DE ABERTURA (podes editar à vontade)
-  heroHeadline: 'A contar os dias até ao teu quatro de dezembro.',
+  heroHeadline: 'A contar os dias até ao teu aniversário.',
   heroLead:
-    'Ainda não nos vimos pessoalmente e não temos fotografias juntos — mas entre mensagens demoradas e chamadas sem hora para acabar, tornaste-te a minha pessoa favorita para esperar. A cada dia até ao teu aniversário abre-se aqui uma nota sobre os livros que amas; no dia quatro, abre-se a carta.',
+    'Não nos vimos pessoalmente e não temos fotografias juntos, mas entre mensagens e chamadas sem hora para acabar, tornaste-te a minha pessoa favorita para esperar. A cada dia até ao teu aniversário abre-se aqui uma nota especial para ti; No dia 4 abrirá uma carta aqui, então terás que vir aqui todos os dias até o teu aniversário.',
 
   // COLA AQUI O CAMINHO DA FOTO PRINCIPAL DE ABERTURA DA NINOLA (ex: '/fotos/ninola-capa.jpg'):
-  heroImageUrl: '',
-  heroImageCaption: 'Ninola — 4 de Dezembro.',
+  heroImageUrl: './src/public/fotos/10.jpg',
+  heroImageCaption: 'Ninola 1',
 
   countdownTitle: 'Até chegar o teu dia, Ninola',
 
-  songTitle: 'Heaven Baby',
-  songArtist: 'Ayra Starr',
+  songTitle: 'Your Favorite Song',
+  songArtist: 'Acho eu, haha',
   songYoutubeId: SONG_YOUTUBE_ID,
   songPath: LOCAL_SONG_PATH,
 
@@ -49,12 +49,13 @@ export const KEEPSAKE: KeepsakeData = {
   letterSalutation: 'Querida Ninola,',
   letterBody: `Passei bastante tempo a pensar em como juntar tudo isto sem exageros, porque o que nasceu entre nós sempre viveu na leveza e na verdade.
 
-Nunca nos encontrámos pessoalmente, não temos fotos lado a lado, e também ainda não demos um rótulo fechado ao que estamos a construir. Mesmo assim, é curioso como conseguiste ocupar um lugar tão claro nos meus dias — na forma como espero pelas tuas mensagens, no cuidado com que reparo no que dizes e na calma que sinto sempre que estamos a falar.
-
-Ao longo destes dias fui deixando aqui pequenas notas ligadas aos livros que tanto gostas — sobre amor, amizade, companhia e cumplicidade — porque conhecer as histórias que carregas foi a forma mais bonita de me sentir perto de ti mesmo antes do nosso primeiro abraço.
-
-Desejo que este novo ano de vida te traga manhãs tranquilas, sonhos protegidos e a certeza de que és muito querida. Mal posso esperar pelo dia em que a distância dê lugar ao nosso primeiro encontro de verdade.`,
-  letterClosing: 'Com carinho, amizade e à espera do nosso dia,',
+Nunca nos encontrámos pessoalmente, não temos memórias, e também ainda não demos um rótulo para tudo o que vivemos, mas mesmo assim, é curioso como conseguiste ocupar um lugar tão especial nos meus dias, mesmo sem querer espero pelas tuas mensagens, no cuidado com que reparo no que dizes e na calma que sinto sempre que estamos a falar.
+Dizem por aí que o tempo é o melhor juiz de tudo, e eu não sei se é verdade, mas sei que o tempo que passei a conhecer-te foi suficiente para perceber que és uma pessoa rara, com uma autenticidade que me faz sentir à vontade para ser eu mesmo. 
+Não nos conhecemos há muito tempo, mas a forma como me fazes sentir é algo que não se encontra todos os dias. A tua amizade, a tua atenção e a tua presença, mesmo à distância, são presentes que guardo com muito carinho e por tudo isso, preciso agradecer. 
+Ao longo destes dias fui deixando aqui pequenas notas ligadas aos livros que tanto gostas porque em relacionamentos o mais importante é fazer o outro feliz e nada melhor do que livros para te fazer feliz. 
+Desejo que este novo ano de vida te traga manhãs tranquilas, mais sonhos e a certeza de que és muito querida (por mim). Mal posso esperar pelo dia em que a distância dê lugar ao nosso primeiro encontro de verdade.
+Que Deus te abençoe e te guarde sempre, Ninola. Que a tua vida seja repleta de momentos felizes, rodeada de pessoas que te amam e que cada dia seja uma oportunidade para crescer, aprender e realizar os teus sonhos.`,
+  letterClosing: 'Com carinho, amor e aguardando ansiosamente pelo nosso encontro, te amo, mas bue bue não, só um pouquinho,',
 
   // 8 LIVROS FAVORITOS — 1 NOTA POR DIA DE 26 DE NOVEMBRO A 3 DE DEZEMBRO
   dailyReveals: [
@@ -139,10 +140,10 @@ Desejo que este novo ano de vida te traga manhãs tranquilas, sonhos protegidos 
     dateLabel: 'Retrato Principal',
     location: 'Entre Nós',
     caption:
-      'Nunca estivemos no mesmo sítio ao mesmo tempo, mas nunca houve silêncio difícil entre nós.',
+      'Nunca estivemos no mesmo sítio ao mesmo tempo, mas isso nunca foi um problema para nós.',
     reflection:
-      'A distância física só tem mostrado o quanto é natural gostar de ti — com amizade, calma e cumplicidade.',
-    imageUrl: '', // COLA AQUI O CAMINHO DA FOTO PRINCIPAL "COMPANHIA SEM DISTÂNCIA"
+      'A distância física só tem mostrado o quanto é natural gostar de ti e estar ao teu lado.',
+    imageUrl: './src/public/fotos/1.jpg', // COLA AQUI O CAMINHO DA FOTO PRINCIPAL "COMPANHIA SEM DISTÂNCIA"
   },
 
   // CARD COM 9 FOTOS DA NINOLA (passam automaticamente com transição suave)
@@ -152,64 +153,64 @@ Desejo que este novo ano de vida te traga manhãs tranquilas, sonhos protegidos 
       id: 'slide-1',
       numberLabel: '01 / 09',
       title: 'Ninola · 01',
-      caption: 'Um detalhe teu que fica fácil de guardar.',
-      imageUrl: '', // COLA AQUI O CAMINHO DA FOTO 1 DE 9 (ex: '/fotos/ninola-1.jpg')
+      caption: 'Minha foto favorita.',
+      imageUrl: './src/public/fotos/2.jpg', // COLA AQUI O CAMINHO DA FOTO 1 DE 9 (ex: '/fotos/ninola-1.jpg')
     },
     {
       id: 'slide-2',
       numberLabel: '02 / 09',
       title: 'Ninola · 02',
       caption: 'A leveza com que iluminas um dia comum.',
-      imageUrl: '', // COLA AQUI O CAMINHO DA FOTO 2 DE 9 (ex: '/fotos/ninola-2.jpg')
+      imageUrl: './src/public/fotos/3.jpg', // COLA AQUI O CAMINHO DA FOTO 2 DE 9 (ex: '/fotos/ninola-2.jpg')
     },
     {
       id: 'slide-3',
       numberLabel: '03 / 09',
       title: 'Ninola · 03',
       caption: 'Entre conversas longas e sorrisos tranquilos.',
-      imageUrl: '', // COLA AQUI O CAMINHO DA FOTO 3 DE 9 (ex: '/fotos/ninola-3.jpg')
+      imageUrl: './src/public/fotos/3.jpg', // COLA AQUI O CAMINHO DA FOTO 3 DE 9 (ex: '/fotos/ninola-3.jpg')
     },
     {
       id: 'slide-4',
       numberLabel: '04 / 09',
       title: 'Ninola · 04',
       caption: 'Presença que atravessa qualquer quilómetro.',
-      imageUrl: '', // COLA AQUI O CAMINHO DA FOTO 4 DE 9 (ex: '/fotos/ninola-4.jpg')
+      imageUrl: './src/public/fotos/4.jpg', // COLA AQUI O CAMINHO DA FOTO 4 DE 9 (ex: '/fotos/ninola-4.jpg')
     },
     {
       id: 'slide-5',
       numberLabel: '05 / 09',
       title: 'Ninola · 05',
-      caption: 'Amizade e cumplicidade em cada detalhe.',
-      imageUrl: '', // COLA AQUI O CAMINHO DA FOTO 5 DE 9 (ex: '/fotos/ninola-5.jpg')
+      caption: 'Te amo, mas bue bue não',
+      imageUrl: './src/public/fotos/5.jpg', // COLA AQUI O CAMINHO DA FOTO 5 DE 9 (ex: '/fotos/ninola-5.jpg')
     },
     {
       id: 'slide-6',
       numberLabel: '06 / 09',
       title: 'Ninola · 06',
       caption: 'O encanto silencioso de quem tu és.',
-      imageUrl: '', // COLA AQUI O CAMINHO DA FOTO 6 DE 9 (ex: '/fotos/ninola-6.jpg')
+      imageUrl: './src/public/fotos/6.jpg', // COLA AQUI O CAMINHO DA FOTO 6 DE 9 (ex: '/fotos/ninola-6.jpg')
     },
     {
       id: 'slide-7',
       numberLabel: '07 / 09',
       title: 'Ninola · 07',
-      caption: 'Para olhar sem pressa enquanto o dia passa.',
-      imageUrl: '', // COLA AQUI O CAMINHO DA FOTO 7 DE 9 (ex: '/fotos/ninola-7.jpg')
+      caption: 'Para olhar sem pressa enquanto o dia passa. Uma das minhas favoritas.',
+      imageUrl: './src/public/fotos/7.jpg', // COLA AQUI O CAMINHO DA FOTO 7 DE 9 (ex: '/fotos/ninola-7.jpg')
     },
     {
       id: 'slide-8',
       numberLabel: '08 / 09',
       title: 'Ninola · 08',
       caption: 'Cada pequena pausa traz o teu nome ao pensamento.',
-      imageUrl: '', // COLA AQUI O CAMINHO DA FOTO 8 DE 9 (ex: '/fotos/ninola-8.jpg')
+      imageUrl: './src/public/fotos/8.jpg', // COLA AQUI O CAMINHO DA FOTO 8 DE 9 (ex: '/fotos/ninola-8.jpg')
     },
     {
       id: 'slide-9',
       numberLabel: '09 / 09',
       title: 'Ninola · 09',
       caption: 'À espera do dia em que estas fotos ganhem a nossa história ao vivo.',
-      imageUrl: '', // COLA AQUI O CAMINHO DA FOTO 9 DE 9 (ex: '/fotos/ninola-9.jpg')
+      imageUrl: './src/public/fotos/9.jpg', // COLA AQUI O CAMINHO DA FOTO 9 DE 9 (ex: '/fotos/ninola-9.jpg')
     },
   ],
 };
