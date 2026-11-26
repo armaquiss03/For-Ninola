@@ -95,7 +95,7 @@ export function DigitalLetterSection({
         {!isUnlocked ? (
           <div className="border-y border-[#2b1d19]/18 py-16 text-center md:py-24">
             <p className="text-xs tracking-[0.14em] text-[#8d7670]">
-              4 de Dezembro
+              3 de Dezembro
             </p>
             <h2
               id="letter-heading"
@@ -104,7 +104,7 @@ export function DigitalLetterSection({
               Carta para o teu dia, {recipientName}
             </h2>
             <p className="mx-auto mt-5 max-w-md font-serif-editorial text-xl leading-relaxed text-[#5e4741]">
-              Esta carta e a minha voz a lê-la para ti estarão disponíveis no dia 4 de Dezembro. Até lá, podes continuar a abrir as notas diárias e a ver as fotografias que guardei para ti.
+              Esta carta e a minha voz a lê-la para ti estarão disponíveis no dia 3 de Dezembro. Até lá, podes continuar a abrir as notas diárias e a ver as fotografias que guardei para ti.
             </p>
           </div>
         ) : (

@@ -44,7 +44,7 @@ export function DailyRevealsSection({
           <div className="space-y-6 lg:col-span-5">
             <div className="space-y-2 border-b border-[#2b1d19]/12 pb-6">
               <p className="text-xs tracking-[0.12em] text-[#8d7670]">
-                Dia após dia · Até 4 de Dezembro
+                Dia após dia · Até 3 de Dezembro
               </p>
               <h2
                 id="daily-heading"
@@ -144,8 +144,8 @@ export function DailyRevealsSection({
                 {lockedItems.length > 0 && (
                   <p className="mt-10 text-xs text-[#5e4741]">
                     {lockedItems.length === 1
-                      ? 'Falta 1 nota antes da carta de aniversário abrir a 4 de dezembro.'
-                      : `Faltam ${lockedItems.length} notas antes da carta de aniversário abrir a 4 de dezembro.`}
+                      ? 'Falta 1 nota antes da carta de aniversário abrir a 3 de dezembro.'
+                      : `Faltam ${lockedItems.length} notas antes da carta de aniversário abrir a 3 de dezembro.`}
                   </p>
                 )}
               </div>

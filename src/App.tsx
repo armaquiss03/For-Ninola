@@ -22,7 +22,7 @@ export default function App() {
   const [isSongPlaying, setIsSongPlaying] = useState(false);
   const [isVoicePlaying, setIsVoicePlaying] = useState(false);
 
-  // Mantém a data local sincronizada para desbloquear à meia-noite de 4 de dezembro
+  // Mantém a data local sincronizada para desbloquear à meia-noite de 3 de dezembro
   useEffect(() => {
     const interval = window.setInterval(() => {
       const nextKey = getLocalDateKey();
@@ -92,7 +92,7 @@ export default function App() {
           <section className="mx-auto grid max-w-[1160px] grid-cols-1 items-end gap-12 px-6 pt-8 pb-20 md:px-12 md:pt-14 md:pb-28 lg:grid-cols-12 lg:gap-16">
             <div className="space-y-8 lg:col-span-6 lg:pb-2">
               <p className="text-xs tracking-[0.14em] text-[#5e4741]">
-                4 de Dezembro
+                3 de Dezembro
               </p>
 
               <h1

@@ -16,20 +16,20 @@ const LOCAL_SONG_PATH = '';
 const SONG_YOUTUBE_ID = '2ZTcvsdMR1c';
 
 // Muda para `true` apenas se quiseres pré-visualizar todas as notas e a carta
-// antes do dia 4 de dezembro. Volta a colocar `false` antes de enviar para a Ninola.
+// antes do dia 3 de dezembro. Volta a colocar `false` antes de enviar para a Ninola.
 const PREVIEW_BIRTHDAY_MODE = false;
 
 export const KEEPSAKE: KeepsakeData = {
   recipientName: 'Ninola',
   senderName: 'Agui',
-  birthdayIso: '2026-12-04T00:00:00',
-  birthdayDateKey: '2026-12-04',
+  birthdayIso: '2026-12-03T00:00:00',
+  birthdayDateKey: '2026-12-03',
   previewBirthdayMode: PREVIEW_BIRTHDAY_MODE,
 
   // TEXTO DE ABERTURA (podes editar à vontade)
   heroHeadline: 'A contar os dias até ao teu aniversário.',
   heroLead:
-    'Não nos vimos pessoalmente e não temos fotografias juntos, mas entre mensagens e chamadas sem hora para acabar, tornaste-te a minha pessoa favorita para esperar. A cada dia até ao teu aniversário abre-se aqui uma nota especial para ti; No dia 4 abrirá uma carta aqui, então terás que vir aqui todos os dias até o teu aniversário.',
+    'Não nos vimos pessoalmente e não temos fotografias juntos, mas entre mensagens e chamadas sem hora para acabar, tornaste-te a minha pessoa favorita para esperar. A cada dia até ao teu aniversário abre-se aqui uma nota especial para ti; No dia 3 abrirá uma carta aqui, então terás que vir aqui todos os dias até o teu aniversário.',
 
   // COLA AQUI O CAMINHO DA FOTO PRINCIPAL DE ABERTURA DA NINOLA (ex: '/fotos/ninola-capa.jpg'):
   heroImageUrl: '/fotos/10.jpg',
@@ -45,15 +45,20 @@ export const KEEPSAKE: KeepsakeData = {
   voiceNoteLabel: 'Nota de voz a ler esta carta',
   voiceNotePath: VOICE_NOTE_PATH,
 
-  // CARTA DE ANIVERSÁRIO (desbloqueada apenas no dia 4 de dezembro — edita aqui):
+  // CARTA DE ANIVERSÁRIO (desbloqueada apenas no dia 3 de dezembro — edita aqui):
   letterSalutation: 'Querida Ninola,',
   letterBody: `Passei bastante tempo a pensar em como juntar tudo isto sem exageros, porque o que nasceu entre nós sempre viveu na leveza e na verdade.
 
-Nunca nos encontrámos pessoalmente, não temos memórias, e também ainda não demos um rótulo para tudo o que vivemos, mas mesmo assim, é curioso como conseguiste ocupar um lugar tão especial nos meus dias, mesmo sem querer espero pelas tuas mensagens, no cuidado com que reparo no que dizes e na calma que sinto sempre que estamos a falar.
-Dizem por aí que o tempo é o melhor juiz de tudo, e eu não sei se é verdade, mas sei que o tempo que passei a conhecer-te foi suficiente para perceber que és uma pessoa rara, com uma autenticidade que me faz sentir à vontade para ser eu mesmo. 
-Não nos conhecemos há muito tempo, mas a forma como me fazes sentir é algo que não se encontra todos os dias. A tua amizade, a tua atenção e a tua presença, mesmo à distância, são presentes que guardo com muito carinho e por tudo isso, preciso agradecer. 
-Ao longo destes dias fui deixando aqui pequenas notas ligadas aos livros que tanto gostas porque em relacionamentos o mais importante é fazer o outro feliz e nada melhor do que livros para te fazer feliz. 
+Nunca nos encontrámos pessoalmente, não temos memórias, e também ainda não demos um rótulo para tudo o que vivemos, mas mesmo assim, é curioso como conseguiste ocupar um lugar tão especial nos meus dias, mesmo sem querer espero pelas tuas mensagens, no cuidado com que reparo no que dizes e na calma que sinto sempre que estamos a falar. Em "Cruzando o Caminho do Sol", lê-se que o mundo podia tentar roubar muita coisa às pessoas, "mas não podia privá-las de sua memória" — e cada conversa nossa já faz parte do que eu guardo comigo com mais cuidado.
+
+Dizem por aí que o tempo é o melhor juiz de tudo, e eu não sei se é verdade, mas sei que o tempo que passei a conhecer-te foi suficiente para perceber que és uma pessoa rara, com uma autenticidade que me faz sentir à vontade para ser eu mesmo.
+
+Não nos conhecemos há muito tempo, mas a forma como me fazes sentir é algo que não se encontra todos os dias. A tua amizade, a tua atenção e a tua presença, mesmo à distância, são presentes que guardo com muito carinho e por tudo isso, preciso agradecer.
+
+Ao longo destes dias fui deixando aqui pequenas notas ligadas aos livros que tanto gostas porque em relacionamentos o mais importante é fazer o outro feliz e nada melhor do que livros para te fazer feliz. Lembrei-me muito de "Uma Oração de Amor", tanto daquela verdade que guia toda a história — "Acima de tudo, guarde o seu coração, pois dele procedem as fontes da vida" — como daquela frase tão certa do livro: "Deus gosta de nos surpreender, e quando menos esperamos...". Tu foste exactamente essa surpresa bonita que Ele colocou no meu caminho.
+
 Desejo que este novo ano de vida te traga manhãs tranquilas, mais sonhos e a certeza de que és muito querida (por mim). Mal posso esperar pelo dia em que a distância dê lugar ao nosso primeiro encontro de verdade.
+
 Que Deus te abençoe e te guarde sempre, Ninola. Que a tua vida seja repleta de momentos felizes, rodeada de pessoas que te amam e que cada dia seja uma oportunidade para crescer, aprender e realizar os teus sonhos.`,
   letterClosing: 'Com carinho, amor e aguardando ansiosamente pelo nosso encontro, te amo, mas bue bue não, só um pouquinho,',
 
@@ -120,7 +125,7 @@ Que Deus te abençoe e te guarde sempre, Ninola. Que a tua vida seja repleta de 
       bookTitle: 'Uma Oração de Amor',
       bookAuthor: 'Lyta Racielly',
       title: 'Amor com intenção e propósito',
-      note: 'Marta escrevia cartas em segredo para o homem que Deus reservava para ela, até perceber que os planos mais bonitos acontecem quando o coração reconhece cuidado verdadeiro em alguém como Gabriel. Há algo de muito bonito nessa espera respeitosa: não precisamos de apressar o que somos, porque a forma como te cuido em pensamento, oração e companhia já diz tudo o que sinto por ti.',
+      note: 'Marta escrevia cartas em segredo para o homem que Deus reservava para ela, até perceber que os planos mais bonitos acontecem quando o coração reconhece cuidado verdadeiro em alguém como Gabriel. Na véspera do teu aniversário, falta apenas uma noite para o dia 3 de dezembro — não precisamos de apressar o que somos, porque a forma como te cuido em pensamento, oração e companhia já diz tudo o que sinto por ti.',
     },
     {
       id: 'day-8',
@@ -128,8 +133,8 @@ Que Deus te abençoe e te guarde sempre, Ninola. Que a tua vida seja repleta de 
       dateLabel: '3 de Dezembro',
       bookTitle: 'Assassinos de Sonhos e Propósitos',
       bookAuthor: 'Amaro Hombo',
-      title: 'Véspera: proteger os teus sonhos juntos',
-      note: 'Na véspera do teu aniversário, lembrei-me do livro de Amaro Hombo sobre tudo aquilo que tenta travar o propósito de alguém. A verdadeira amizade, a cumplicidade e o amor nunca prendem nem diminuem — eles protegem os sonhos do outro e dão abrigo para crescer. É exactamente esse lugar que quero ocupar na tua vida. Amanhã, dia 4 de dezembro, a carta abaixo abre-se para ti.',
+      title: 'Hoje é o teu dia: proteger os teus sonhos',
+      note: 'Feliz aniversário, Ninola. No dia 3 de dezembro lembrei-me do livro de Amaro Hombo sobre tudo aquilo que tenta travar o propósito de alguém. A verdadeira amizade, a cumplicidade e o amor nunca prendem nem diminuem — eles protegem os sonhos do outro e dão abrigo para crescer. É exactamente esse lugar que quero ocupar na tua vida. A tua carta já está aberta logo abaixo.',
     },
   ],
 
